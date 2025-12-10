@@ -6,7 +6,7 @@ const {
     default: makeWASocket,
     useMultiFileAuthState,
     delay,
-    Browsers,
+   // Browsers,
     makeCacheableSignalKeyStore,
     DisconnectReason
 } = require('baileys');
@@ -36,7 +36,7 @@ async function connector(Num, res) {
         },
       //  printQRInTerminal: false,
         logger: pino({ level: 'fatal' }).child({ level: 'fatal' }),
-        browser: Browsers.macOS("Safari"), //check docs for more custom options
+      //  browser: Browsers.macOS("Safari"), //check docs for more custom options
         markOnlineOnConnect: true, //true or false yoour choice
         msgRetryCounterCache
     });
